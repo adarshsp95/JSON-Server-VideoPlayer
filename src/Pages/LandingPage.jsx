@@ -1,20 +1,24 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './Style/LandingPageStyle.css'
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
     <>
       <div className='container mt-5'>
-        <div className="justify-content-between align-items-center">
+        <div className="d-flex flex-direction-row justify-content-between align-items-center">
           <div className="welcome col-lg-4">
             <h3>Welcome To <span className='text-warning'>MediaPlayer</span> </h3>
             <p style={{ textAlign: 'justify' }}>MediaPlayer App Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates esse odit numquam exercitationem cum cupiditate dolor ut. Repudiandae temporibus culpa fuga pariatur molestiae, velit perspiciatis modi sequi exercitationem consequatur!</p>
-            <button className='button btn btn-info mt-5 fw-bold'>Get Started</button>
+            {/* button  */}
+            <Link to={'/home'} className='button btn mt-5 fw-bold'>Get Started</Link>
           </div>
           <div className="col-lg-2"></div>
-          <div className="col-lg-6">
-            <img className='img-fluid' src="https://i.postimg.cc/FHnPHnwk/PLAYPIX-MEDIA-PLAYER.png" alt="img" />
+          <div className="col-lg-6" style={{ display: 'flex', justifyContent: 'flex-end'}}>
+          <img style={{ border: 'none', borderRadius: '5px', boxShadow: '0px 0px 10px 2px rgba(0, 0, 0, 0.5)', width:'400px' }} className='img-fluid' src="https://i.postimg.cc/FHnPHnwk/PLAYPIX-MEDIA-PLAYER.png" alt="img" />
+
           </div>
         </div>
       </div>
@@ -23,7 +27,7 @@ function LandingPage() {
         <h3 className='text-center'>FEATURES</h3>
         <div className="cards-mt-5 d-flex justify-content-between p-5">
           {/* card 1  */}
-          <Card style={{ width: '18rem' }}>
+          <Card className="custom-card" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
@@ -35,7 +39,7 @@ function LandingPage() {
             </Card.Body>
           </Card>
           {/* card 2  */}
-          <Card style={{ width: '18rem' }}>
+          <Card className="custom-card" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
@@ -47,7 +51,7 @@ function LandingPage() {
             </Card.Body>
           </Card>
           {/* card 3  */}
-          <Card style={{ width: '18rem' }}>
+          <Card className="custom-card" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>

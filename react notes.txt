@@ -1,0 +1,56 @@
+12-12-2023
+
+Route (for redirecting)
+ -react doesnt have default routing capability
+ -for that react router dom library is used (npm i react-router-dom)
+ -browser router: Go to main.jsx > bind entire app inside BrowserRouter {eg: <BrowserRouter>
+    <App /> 
+    </BrowserRouter> 
+ -root component means App.jsx
+ - Go to App.jsx
+	-Enclose Components that require routing inside <Route> </Route> tag
+	- backward slash ('/') default base path
+	- import {Routes, Route} from...
+	- <Routes>
+	   <Route path='/' element={<LandingPage/>} />
+<Route path='/home' element={<Home/>} />
+
+Goto Header
+ - Donot use anchor tag (href) in react
+ -  <Link to={'/'} style={{textDecoration:'none'}}>
+            <i class="fa-solid fa-photo-film me-2" style={{height:'30px'}}></i>
+
+            </Link>
+As href refreshes and contents in browser storage 'll be removed. So link to is used
+import Link from ...
+
+
+
+###############################
+ADD LINK TO IN FOOTER ELEMENTS i.e remove href and add linkto
+###############################
+
+
+Goto LandingPage > Change button to Link To , import Link
+
+
+HOME:
+-----
+Add VideoAdd selector, Import it
+
+
+
+
+Add
+====
+
+add button, add modal fro,m react bootstrap
+import modal,button usestate 
+Copy paste function before return()
+connect button handle()
+add form inside modal
+
+
+
+
+
